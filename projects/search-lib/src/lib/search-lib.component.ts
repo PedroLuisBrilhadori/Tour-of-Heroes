@@ -9,7 +9,7 @@ import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'lib-search-lib',
-  template: './search-lib.component.html',
+  templateUrl: './search-lib.component.html',
   styleUrls: ['./search-lib.component.css']
 })
 
@@ -26,10 +26,10 @@ export class SearchLibComponent implements OnInit {
   ngOnInit(): void {
     this.heroes$ = this.searchTerms.pipe(
       debounceTime(300),
-
+      
       distinctUntilChanged(),
 
       switchMap((term: string) => this.heroService.searchHeroes(term)),
     );
-  }
+  } 
 }
