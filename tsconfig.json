@@ -14,6 +14,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "search-lib": [
+        "dist/search-lib/search-lib",
+        "dist/search-lib"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
