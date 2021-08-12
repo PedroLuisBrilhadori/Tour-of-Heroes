@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { SearchLibComponent } from './search-lib.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
+import { SearchLibComponent } from './search-lib.component';
 
 
 @NgModule({
@@ -18,3 +18,4 @@ import { RouterModule } from '@angular/router';
   ]
 })
 export class SearchLibModule { }
+ 
